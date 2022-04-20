@@ -16,18 +16,6 @@ pipeline {
 
         }
 
-        stage('execute') {
-
-            steps {
-
-               echo "test"
-
-                sh "python Helloworld"
-
-            }
-
-        }
-
         stage('Deploy') {
 
             steps {
