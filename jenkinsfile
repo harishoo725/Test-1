@@ -1,0 +1,43 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Build') {
+
+            steps {
+
+           echo "build"    
+
+                sh " Helloworld.py"
+
+            }
+
+        }
+
+        stage('execute') {
+
+            steps {
+
+               echo "test"
+
+                sh "python Helloworld"
+
+            }
+
+        }
+
+        stage('Deploy') {
+
+            steps {
+
+              echo "deploy"
+
+            }
+
+        }
+
+    }
+
+}
