@@ -10,7 +10,7 @@ pipeline {
 
            echo "build"    
 
-                sh " Helloworld.py"
+                sh "pythonc Helloworld.py"
 
             }
 
